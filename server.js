@@ -3,6 +3,8 @@ const fs=require('fs')
 
 var app=express();
 
+
+const port=process.env.PORT||3400;
 app.set('view engine','ejs')
 
 app.use(express.static(__dirname + '/public'));
@@ -38,6 +40,6 @@ app.get('/user',(req,res)=>{
     }); */
 });
 
-app.listen(3000,()=>{
+app.listen(port,()=>{
     console.log('server started  at localhost:3000')
 });
