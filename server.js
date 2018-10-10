@@ -4,7 +4,7 @@ const fs=require('fs')
 var app=express();
 
 
-const port=process.env.PORT||3400;
+const port=process.env.PORT || 3400;
 app.set('view engine','ejs')
 
 app.use(express.static(__dirname + '/public'));
